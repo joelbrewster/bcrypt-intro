@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get '/posts/:id/comments' => 'posts#showcomments'
   get '/login' => 'users#login'
   post '/login' => 'users#verify'
+  get '/logout' => 'users#logout'
 end
