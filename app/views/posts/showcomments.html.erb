@@ -1,0 +1,7 @@
+<%= @post %>
+
+<% @post.comments.each do |comment| %>
+  <p><%= comment.id %></p>
+  <p><%= comment.content %></p>
+  <p><%= comment.user.email %></p>
+<% end %>
